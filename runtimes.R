@@ -8,7 +8,7 @@ for (arg in args) titleTmp = paste(titleTmp, arg, sep=" ");
 
 data = read.csv('runtimes.csv', stringsAsFactors=F,header=T, sep=',')
 x<-as.POSIXct(data$startDatetime,format='%Y-%m-%dT%H:%M:%S')
-y<-as.POSIXct(data$runtime,format="%M:%OS")
+y<-data$milliseconds
 png('runtimes.png')
 plot(x,y,col.axis = 'sky blue',xlab='Date',ylab='Minutes')
 title(main=paste(titleTmp, Sys.time(), sep="\n"))

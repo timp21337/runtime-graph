@@ -1,3 +1,3 @@
 #!/bin/bash
  
-sleep $(( RANDOM/2000 ))
+sleep $(( RANDOM/2500 ))
