@@ -1,6 +1,5 @@
 A wrapper around a shell script to produce a graph of runtimes.
 ===============================================================
-2012/02/09
 
 This script has been tested on ubuntu, debian and Windows7.
 
